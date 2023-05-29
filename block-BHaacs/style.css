@@ -1,0 +1,619 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom css */
+.headWrapper{
+    width: 1300px;
+    height: 600px;
+    margin: 20px auto;
+    justify-content: space-between;
+    background-color: rgb(13, 126, 157);
+    /* border: 2px solid black; */
+}
+.headerCover{
+    width: 1300px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+.inner-left-cover{
+   width: 100px;
+   height: 50px;
+   /* border: 2px solid black; */
+   font-size: 25px;
+   font-weight: 500;
+   position: relative;
+   left: 50px;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.inner-right-cover{
+    width: 450px;
+    height: 50px;
+    color: white;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+ }
+.navLinks{
+    text-decoration: none;
+    color: white;
+}
+ .homeLinks{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+ }
+ .contentWrapper{
+    width: 800px;
+    height: 600px;
+    position: relative;
+    left: 200px;
+    /* border:  2px solid black; */
+ }
+ .tagline{
+    width: 600px;
+    height: 150px;
+    position: relative;
+    left: 100px;
+    top: 20px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 500;
+    /* border:  2px solid black; */
+ }
+ .trailButton{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 600;
+    top:40px;
+    left: 300px;
+ }
+ .heroImage{
+    width: 650px;
+    height: 480px;
+    position: relative;
+    /* top: 50px; */
+    bottom: 60px;
+    left: 100px;
+    /* border: 2px solid green; */
+ }
+.uplodingWrapper{
+    width: 900px;
+    height: 100px;
+    position: relative;
+    top: 150px;
+    left: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.pdfBox{
+    width: 200px;
+    height: 50px;
+    /* border: 2px solid black; */
+}
+.wordBox{
+    width: 200px;
+    height: 50px;
+    /* border: 2px solid black; */
+}
+.imageBox{
+    width: 200px;
+    height: 50px;
+    /* border: 2px solid black; */
+}
+.videoBox{
+    width: 200px;
+    height: 50px;
+    /* border: 2px solid black; */
+}
+
+.imageTypeIcon{
+    /* border: 2px solid black; */
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+.imageType{
+    font-size: 25px;
+    color: gray;
+    position: relative;
+    font-weight: 900;
+    left: 20px;
+    /* border: 2px solid black; */
+}
+.horizontalRow{
+    width: 1000px;
+    background-color: gray;
+    position: relative;
+    top: 150px;
+    border: 1px solid rgb(188, 185, 185);
+}
+.articleWrapper{
+    width: 1100px;
+    height: 400px;
+    position: relative;
+    top: 200px;
+    left: 180px;
+    /* border: 2px solid black; */
+}
+.montioringText{
+  width: 400px;
+  height: 250px;
+  position: relative;
+  top: 80px;
+  left: 80px;
+  /* border: 2px solid black; */
+}
+.monitorHeading{
+    font-size: 30px;
+    padding-top: 5px;
+    font-weight: 400;
+}
+.monitorPara{
+    font-size: 18px;
+    padding: 2px;
+    color: gray;
+}
+.monitorParaWrapper{
+    margin-top: 20px;
+    height: 80px;
+    /* border: 2px solid black; */
+}
+.monitoringChart{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    bottom: 210px;
+    left: 550px;
+    /* border: 2px solid black; */
+}
+.graphImage{
+    width: 500px;
+    height: 300px;
+}
+.learnMoreButton{
+  color: white;
+  position: relative;
+  left: 25px;
+  top: 12px;
+  font-size: 20px;
+}
+.learnMoreWrapper{
+    width: 150px;
+    height: 50px;
+    position: relative;
+    bottom: 280px;
+    left: 80px;
+    border-radius: 5px;
+    /* border: 2px solid black; */
+    background-color: rgb(13, 126, 157);
+}
+/* .learnMoreSmallBox_1{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 330px;
+    left: 70px;
+    transform: rotate(45deg);
+    border: 2px solid black;
+} */
+
+.articleTableWrapper{
+    width: 1100px;
+    height: 600px;
+    position: relative;
+    top: 200px;
+    left: 180px;
+    /* border: 2px solid black; */
+}
+.weeklyScoreHeader{
+    font-size: 30px;
+    margin-top: 50px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.tabularData{
+    width: 1100px;
+    height: 500px;
+    margin: 50px auto;
+    color: gray;
+    /* border: 2px solid black;; */
+}
+
+.tableHeading{
+    font-size: 20px;
+    padding-top: 10px;
+    width: 200px;
+    height: 30px;
+    color: white;
+    border-left:solid gray 1px;
+    border-top:solid gray 1px;
+    background-color: rgb(13, 126, 157);
+    /* border: 2px solid black; */
+}
+table{
+    font-size: 18px;
+    width: 1100px;
+    border-collapse:separate;
+    border:solid gray 1px;
+    border-left: none;
+    border-radius:6px;
+    height: 400px;
+    margin: 0 auto;
+    /* border: 2px solid gray; */
+}
+td{
+    padding-left: 10px;
+    padding-top: 15px;
+    border-left:solid gray 1px;
+    border-top:solid gray 1px;
+}
+tr:nth-child(2n+1){
+    background-color: rgb(209, 230, 230);
+}
+.motivateWrapper{
+    width: 500px;
+    height: 150px;
+    position: relative;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    color: rgb(8, 8, 112);
+    flex-direction: column;
+    top: 150px;
+    left: 450px;
+    /* border: 2px solid black; */
+}
+.radioButton{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    height: 70px;
+    /* border: 2px solid black; */
+}
+.couseDurationRadio{
+    width: 200px;
+    height: 20px;
+}
+/* switch rounded */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(13, 126, 157);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .plansWrapper{
+    width: 1100px;
+    position: relative;
+    top: 200px;
+    left: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+    /* border: 2px solid black; */
+  }
+  .basicPlan{
+    width: 400px;
+    height: 550px;
+    border-radius: 5px ;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 2px 1px rgb(13, 126, 157);
+
+  }
+  .popularPlan{
+    width: 400px;
+    height: 550px;
+    border-radius: 5px ;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 2px 1px rgb(13, 126, 157);
+
+  }
+  .tickImage{
+    display: inline;
+    width: 15px;
+    height: 15px;
+  }
+  .crossImage{
+    display: inline;
+    width: 12px;
+    height: 12px;
+  }
+  .planHeader{
+    font-size: 30px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+  }
+  .quote1{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: gray;
+    /* border: 2px solid black; */
+  }
+  .quote2{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: gray;
+    /* border: 2px solid black; */
+  }
+  .priceWrapper{
+     /* border: 2px solid black; */
+     display:  flex;
+     margin-top: 20px;
+     justify-content: center;
+  } 
+  .price{
+    font-size: 20px;
+    color: gray;
+    /* border: 2px solid black; */
+  }
+  .dollar{
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+    color:rgb(13, 126, 157);
+    /* border: 2px solid black; */
+  }
+  .contentDiscription{
+    width: 300px;
+    margin: 10px auto;
+    height: 200px;
+    /* border: 2px solid black; */
+  }
+  .contentLines{
+    width: 300px;
+    margin-top: 30px ;
+    font-size: 20px;
+    height: 20px;
+    /* border: 2px solid black; */
+  }
+  .courseButton{
+    margin-top: 40px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px ;
+    color: rgb(82, 79, 79);
+    font-size: 18px;
+    width: 300px;
+    height: 40px;
+
+  }
+  .popularCourseButton{
+    background-color: rgb(13, 126, 157);
+    color: white;
+  }
+  .trailWrapper{
+    width: 900px;
+    height: 250px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(13, 126, 157);
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    top: 300px;
+    left: 300px;
+    /* border: 2px solid black; */
+  }
+  .trialButton{
+    margin-top: 40px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px ;
+    color: rgb(82, 79, 79);
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+
+  }
+  .bottomLinksWrapper{
+    width: 1100px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 400px;
+    left: 200px;
+    /* border: 2px solid black; */
+  }
+  .TrackLBox{
+    width: 250px;
+    height: 300px;
+    /* border: 2px solid black; */
+  }
+  .FeaturesBox{
+    width: 200px;
+    height: 300px;
+    /* border: 2px solid black; */
+  }
+  .SupportBox{
+    width: 200px;
+    height: 300px;
+    /* border: 2px solid black; */
+  }
+  .ContactBox{
+    width: 200px;
+    height: 300px;
+    /* border: 2px solid black; */
+  }
+  .HomeLogo{
+    font-size: 30px;
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+    /* border: 2px solid black; */
+  }
+  .footerText{
+    font-size: 18px;
+    color: gray;
+  }
+  .socialMediaLinks{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    /* border: 2px solid black; */
+    position: relative;
+    top: 20px;
+    color:rgb(13, 126, 157);
+  }
+  .navFooterLinks{
+    width: 200px;
+    height: 120px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+  }
+  .navFooterContact{
+    width: 200px;
+    height: 70px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+  }
